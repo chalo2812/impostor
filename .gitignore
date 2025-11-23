@@ -6,3 +6,4 @@ dist/
 .DS_Store
 .next/
 pnpm-lock.yaml
+package-lock.json

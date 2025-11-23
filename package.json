@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "packageManager": "pnpm@8.8.0",
   "private": false,
-  "description": "Proyecto React convertido a Next.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
