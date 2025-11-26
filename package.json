@@ -6,7 +6,8 @@
   "description": "Proyecto React convertido a Next.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build --output public",
+    "build": "next build && next export",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
