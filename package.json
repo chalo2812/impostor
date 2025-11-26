@@ -8,7 +8,9 @@
     "dev": "next dev",
     "build": "next build && next export",
     "export": "next export",
-    "start": "next start",
+    "start:next": "next start",
+    "start:static": "serve out -s -l 3000",
+    "start": "pnpm run start:next",
     "lint": "next lint"
   },
   "dependencies": {
@@ -20,7 +22,8 @@
     "vercel": "^48.11.0"
   },
   "devDependencies": {
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "serve": "^14.2.0"
   },
   "engines": {
     "node": ">=18"
