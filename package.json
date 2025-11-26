@@ -1,0 +1,28 @@
+{
+  "name": "impostor",
+  "version": "0.1.0",
+  "packageManager": "pnpm@8.8.0",
+  "private": true,
+  "description": "Proyecto React convertido a Next.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.2",
+    "next": "^16.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vercel": "^48.11.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
