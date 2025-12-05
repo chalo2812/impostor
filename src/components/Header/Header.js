@@ -1,4 +1,4 @@
-import './Header.css';
+// Header styles imported globally from pages/_app.jsx to satisfy Next.js rules
 
 function Header() {
   return (

@@ -1,4 +1,4 @@
-import './App.css';
+// App styles imported globally from pages/_app.jsx to satisfy Next.js rules
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
