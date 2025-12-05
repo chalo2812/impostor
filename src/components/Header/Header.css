@@ -1,0 +1,9 @@
+.Header {
+  text-align: center;
+  background-color: aqua;
+}
+
+.Header-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
