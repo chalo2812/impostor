@@ -1,9 +1,8 @@
-.Impostor {
-    
-}
 .Impostor-root {
     background: fixed #2d2;
+    display: flex; 
+    flex-wrap: wrap;
 }
-.cointainer {
+.container {
     color: green;
 }
