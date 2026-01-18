@@ -60,7 +60,7 @@
   color: #fff;
   font-size: 24px;
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 0px 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,27 +71,34 @@
   opacity: 0.8;
 }
 
+.cerrar {
+  align: right;
+}
+
 .sidebar-menu {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 48px;
   left: 0;
-  background: #1a1a1a;
+  background: #2f386c;
   border-right: 1px solid #ffffff05;
   display: flex;
   flex-direction: column;
-  min-width: 150px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
-  animation: slideIn 0.2s ease;
+  width: 200px;
+  height: calc(100vh - 40px);
+  box-shadow: 4px 0 12px rgba(0,0,0,0.45);
+  z-index: 1000;
+  animation: slideInLeft 0.3s ease;
+  overflow-y: auto;
 }
 
-@keyframes slideIn {
+@keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateX(-100%);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -116,7 +123,33 @@
   border-bottom: none;
 }
 
-/* Responsive: solo icono en pantallas pequeñas */
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #ffffff05;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.close-button:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
 @media (max-width: 520px) {
   .header .title { font-size: 16px; }
   .header .roleBtn .label { display: none; }

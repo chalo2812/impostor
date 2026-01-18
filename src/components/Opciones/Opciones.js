@@ -9,7 +9,7 @@ const Opciones = ({ onClose }) => {
       <button className="close-btn" onClick={onClose}>✕</button>
       <h2>Opciones</h2>
       
-      <div className="options-group">
+      {<div className="options-group">
         <label htmlFor="volume">Volumen</label>
         <input 
           type="range" 
@@ -20,7 +20,7 @@ const Opciones = ({ onClose }) => {
           onChange={(e) => setVolume(e.target.value)}
         />
         <span>{volume}%</span>
-      </div>
+      </div>}
 
       <div className="options-group">
         <label htmlFor="difficulty">Dificultad</label>
@@ -34,7 +34,6 @@ const Opciones = ({ onClose }) => {
           <option value="dificil">Difícil</option>
         </select>
       </div>
-
       <button className="save-btn">Guardar Opciones</button>
     </div>
   )

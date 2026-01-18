@@ -4,7 +4,7 @@ import Impostor from '../Impostor/Impostor';
 
 function  App() {
   return (
-    <div className="App-root">
+    <div className="app-root">
       <Header />  
       <Impostor />
       <Footer />
