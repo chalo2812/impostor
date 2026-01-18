@@ -1,9 +1,14 @@
 import React from 'react';
 
-export default function Footer() {
+const Footer = () => {
+  const year = new Date().getFullYear();
   return (
-    <footer className="app-footer">
-      <div className="container">Impostor App © {new Date().getFullYear()}</div>
+    <footer>
+      <div className="app-footer">
+        <div className="container">Impostor App © {year}</div>
+      </div>
     </footer>
   );
 }
+
+export default Footer

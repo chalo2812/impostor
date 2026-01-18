@@ -1,8 +1,8 @@
 .Impostor-root {
-    background: fixed #2d2;
+    background: fixed #0ff;
     display: flex; 
     flex-wrap: wrap;
 }
 .container {
-    color: green;
+    color: chocolate
 }

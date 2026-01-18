@@ -1,12 +1,15 @@
+import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Impostor from '../Impostor/Impostor';  
 
-function App() {
+function  App() {
   return (
     <div className="App-root">
       <Header />
-      <Impostor />
+      <main>
+        <Impostor />
+      </main>
       <Footer />
     </div>
   );
