@@ -1,0 +1,8 @@
+.Impostor-root {
+    background: fixed #0ff;
+    display: flex; 
+    flex-wrap: wrap;
+}
+.container {
+    color: chocolate
+}

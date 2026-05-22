@@ -1,0 +1,146 @@
+.opciones-container {
+  padding: 40px 20px;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.opciones-container h2 {
+  font-size: 32px;
+  margin: 20px 0 30px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  padding: 4px 8px;
+}
+
+.close-btn:hover {
+  opacity: 0.7;
+}
+
+.options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #ffffff05;
+  border-radius: 4px;
+  border: 1px solid #ffffff10;
+}
+
+.options-group label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.options-group input[type="range"] {
+  cursor: pointer;
+  height: 6px;
+  appearance: none;
+  background: #ffffff20;
+  border-radius: 3px;
+  outline: none;
+}
+
+.options-group input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00d4ff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.options-group input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.options-group input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00d4ff;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.options-group input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}
+
+.options-group select {
+  padding: 10px;
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #ffffff20;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.options-group select:hover {
+  border-color: #00d4ff;
+}
+
+.options-group select:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.3);
+}
+
+.options-group span {
+  font-size: 14px;
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+.save-btn {
+  width: 100%;
+  background: #00d4ff;
+  border: none;
+  color: #000;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 10px;
+}
+
+.save-btn:hover {
+  background: #00b8d4;
+  transform: scale(1.02);
+}
+
+.save-btn:active {
+  transform: scale(0.98);
+}
