@@ -1,4 +1,4 @@
-import AppLayout from '../src/components/App/App'
+import AppLayout from '../components/App/App'
 
 export default function Home() {
   return <AppLayout />
