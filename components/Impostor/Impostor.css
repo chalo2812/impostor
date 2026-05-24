@@ -1,8 +1,171 @@
 .Impostor-root {
-    background: fixed #0ff;
-    display: flex; 
-    flex-wrap: wrap;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
+
 .container {
-    color: chocolate
+    width: 100%;
+    max-width: 600px;
 }
+
+.palabra-container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.titulo {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Loading */
+.loading-container {
+    padding: 40px 0;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Error */
+.error-container {
+    padding: 20px;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffe6e6;
+    border-radius: 10px;
+}
+
+.btn-retry {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-retry:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+/* Palabra Display */
+.palabra-display {
+    padding: 20px 0;
+}
+
+.palabra {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 30px 0;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.btn-refresh {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-refresh:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.btn-refresh:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .palabra-container {
+        padding: 30px 20px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .palabra {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .btn-refresh {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .palabra {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .btn-refresh {
+        width: 100%;
+    }
+}
+
+/* Made with Bob */
