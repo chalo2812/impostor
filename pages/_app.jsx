@@ -8,8 +8,6 @@ import '../components/Footer/Footer.css'
 import '../components/Impostor/Impostor.css'
 import '../components/Jugar/Jugar.css'
 import '../components/Opciones/Opciones.css'
-import '../components/Tareas/Tareas.css'
-import '../components/Miembros/Miembros.css'
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
