@@ -8,17 +8,17 @@
 .header {
   color: #fff;
   background: #000;
-  padding-top: 12px;
+  padding: 12px 16px;
   transition: padding .18s, box-shadow .18s;
-  display: flow-root list-item;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
 }
 .header.collapsed {
-  padding: 8px 12px;
+  padding: 8px 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.45);
 }
 .header .inner {
